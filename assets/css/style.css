@@ -1,3 +1,13 @@
+/*
+#00AD72 green background
+#00BA7A shade green background
+#1C3E47 text
+#0AC4B9 blue
+#E0165A pink
+#7A5B0C brownish
+#006040 dk gr
+*/
+
 html {
     position: relative;
     min-height: 100%;
@@ -6,8 +16,8 @@ html {
 body{
 	margin: 0 0 100px;
 	font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
-	background-color: #bfebeb;	
-	color: white;
+	background-color: #00AD72;	
+	color: #1C3E47;
 	line-height: 150%;
 	box-sizing: border-box;
 }
@@ -15,49 +25,49 @@ body{
 
 header {
 	width: 100%;
-	background-color: #fbe6cf;
 	overflow: hidden;
-	border-bottom: 10px solid #a9dfdd;
 }
 
 .box {
 	margin:auto;
 	width: 820px;
-	padding: 20px 0px;
+	padding: 20px;
+	overflow: hidden;
 }
+
 main {
 	clear: both;
 	align-content: center;
+	overflow: hidden;
 }
 
 
 footer {
 	clear: both;
 	text-align: center;
-	margin-top: 15px;
+	padding: 20px;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 40px;
+	
 	width: 100%;
 	position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-	background-color: #53c987;
-	border-top: 10px solid #a9dfdd;
+	background-color: #006040;
 }
 
 .score {
 	width: 50%;
 	float: left;
-	background-color: #1fa397;
+	background-color: #00BA7A;
 	padding: 20px;
 }
 
 .board {
 	width: 33.333%;
 	float: left;
-	background-color: #3afefd;
+	background-color: #00BA7A;
 	padding: 20px;
 }
 
@@ -72,11 +82,23 @@ footer {
 }
 
 h1 {
-	color: #cc7035;
 	font-size: 1.75em;
 	font-weight: bolder;
 }
 
 p {
-	color: #64a160;
+	font-size: 1em;
+
 }
+
+h5 {
+	color: #E0165A;
+}
+a {
+	text-decoration: none;
+}
+main img {
+margin: 10px 20px
+}
+
+
