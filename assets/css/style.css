@@ -1,20 +1,82 @@
-* {
-	margin: auto;
-	border: 2px solid red;
+html {
+    position: relative;
+    min-height: 100%;
 }
 
-body {
-
+body{
+	margin: 0 0 100px;
+	font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
+	background-color: #bfebeb;	
+	color: white;
+	line-height: 150%;
+	box-sizing: border-box;
 }
+
 
 header {
-
+	width: 100%;
+	background-color: #fbe6cf;
+	overflow: hidden;
+	border-bottom: 10px solid #a9dfdd;
 }
 
+.box {
+	margin:auto;
+	width: 820px;
+	padding: 20px 0px;
+}
 main {
-
+	clear: both;
+	align-content: center;
 }
 
-footer{
-	
+
+footer {
+	clear: both;
+	text-align: center;
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+	width: 100%;
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	background-color: #53c987;
+	border-top: 10px solid #a9dfdd;
+}
+
+.score {
+	width: 50%;
+	float: left;
+	background-color: #1fa397;
+	padding: 20px;
+}
+
+.board {
+	width: 33.333%;
+	float: left;
+	background-color: #3afefd;
+	padding: 20px;
+}
+
+.instructions {
+	width: 60%;
+	float: right;
+}
+
+.game {
+	width: 40%;
+	float: left;
+}
+
+h1 {
+	color: #cc7035;
+	font-size: 1.75em;
+	font-weight: bolder;
+}
+
+p {
+	color: #64a160;
 }

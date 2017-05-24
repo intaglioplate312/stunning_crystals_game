@@ -6,9 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!--meta name=”description” content=”155 characters of message matching text with a call to action goes here”-->
-		<meta name="Just off Lake Shore Drive, A Creative Upstart for Print Design, Experiential Modeling and one Day Full Stack Development, maybe.">
+		<meta name="description" content="Week 4 Homework, JQuery Game Crystals Collectors NWCoding Bootcamp.">
+		<meta name="author" content="Helen Smith">
 			<!-- Up to 70 Characters of Keyword-relevant text here -->
-			<title>Psychic Game</title>
+			<title>Crystals Collector</title>
 		<!--Faviocon-->
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
 		<!--Myers reset-->
@@ -21,25 +22,56 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 		
+	
 	<header>
-			<h1> Page Title for View</h1>
+		<div class="box">
+			<div class="game">
+				<h1> Crystals Collector !</h1>
+			</div><!--closes game-->
+			<div class="instructions">
+				<p>The computer will choose a random number to start the game.</p>
+				<br />
+				<p>There are four crystals, the value of each is hidden until you click on it. By clicking on a crystal you will add points to your score.</p>
+				<br />
+				<p> You win the game by matching your total score to the computer.</p>
+				<br />
+				<p> You lose the game if your total score goes above the computer.</p>
+				<br />
+				<p> Each time when the game start, the game will change the values of each crystal.</p>
+				<br />
+			</div><!--closes instructions-->
+		</div><!--closes box-->
 	</header>
 
 	<main>
-		<h2> Just Stuff</h2>	
-		<h3> Just Stuff</h3>	
-		<h4> Just Stuff</h4>
-		<h5> Just Stuff</h5>	
-		<h6> Just Stuff</h6>
-		<p> Twas brillig, and the slithy toves <br />
-		Did gyre and gimble in the wabe; <br />
-		All mimsy were the borogoves, <br />
-		And the mome raths outgrabe.</p>
+		<div class="box">
+			<div class="board">
+					<h2> Wins: </h2>	
+			</div><!--closes board-->
+			<div class="board">
+					<h3> place marker</h3>	
+			</div><!--closes board-->
+			<div class="board">
+					<h2> Losses: </h2>	
+			</div><!--closes board-->
+
+				<img src="assets/images/pearl.svg" alt="pearl" width="150" height="150">
+				<img src="assets/images/emerald.svg" alt="emerald" width="150" height="150">
+				<img src="assets/images/moonstone.svg" alt="moonstone" width="150" height="150">
+				<img src="assets/images/alexandrite.svg" alt="alexandrite" width="150" height="150">
+			<div class="score">	
+				<h2>computerChoice</h2>
+			</div><!--closes score-->
+			<div class="score">	
+				<h2>yourTotal</h2>
+			</div><!--closes score-->
+		</div><!--closes box-->
 	</main>
 
 	<footer>
-		<h5> something pithy goes here </h5>
-		<!--iconography-->
+		<a href="https://github.com/intaglioplate312/week-4-game" target="_blank"><img src="assets/images/github_icon.svg" alt="github logo" width="30" height="30"></a>
+
+		<a href="https://justofflakeshoredrive.com" target="_blank"><h5> justofflsd.com </h5></a>
 
 	</footer>
 
