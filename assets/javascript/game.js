@@ -3,23 +3,30 @@ $( document ).ready(function(){
  
 //Start of game
 //Computer gerates random number
-var randomNum = Math.floor(Math.random()*120);
+var randomNum = Math.floor(Math.random()*120) +1;
 // display number to match
 $('#computerChoice').text(randomNum);
-/*
+
 //Each crystal should have a random hidden value between 1 - 12.
-var computerChoice = Math.floor(Math.random()*120) + 1;
 var crystalOne = Math.floor(Math.random()*12) + 1;
+// display number to match
+$('#crystal1').text(crystalOne);
 var crystalTwo = Math.floor(Math.random()*12) + 1;
+// display number to match
+$('#crystal2').text(crystalTwo);
 var crystalThree = Math.floor(Math.random()*12) + 1;
+// display number to match
+$('#crystal3').text(crystalThree);
 var crystalFour = Math.floor(Math.random()*12) + 1;
+// display number to match
+$('#crystal4').text(crystalFour);
 
 //For start no display
 var playerChoices = 0;
 var Wins = 0;
 var Losses = 0;
 
-
+/*
 
 //The random number shown at the start of the game should be between 19 - 120.
 //The player will be shown a random number at the start of the game.
