@@ -1,13 +1,3 @@
-/*
-#00AD72 green background
-#00BA7A shade green background
-#1C3E47 text
-#0AC4B9 blue
-#E0165A pink
-#7A5B0C brownish
-#006040 dk gr
-*/
-
 html {
     position: relative;
     min-height: 100%;
@@ -20,8 +10,8 @@ body{
 	color: #1C3E47;
 	line-height: 150%;
 	box-sizing: border-box;
+	letter-spacing: .75px;
 }
-
 
 header {
 	width: 100%;
@@ -41,14 +31,12 @@ main {
 	overflow: hidden;
 }
 
-
 footer {
 	clear: both;
 	text-align: center;
 	padding: 20px;
 	margin-right: auto;
 	margin-left: auto;
-	
 	width: 100%;
 	position: absolute;
     left: 0;
@@ -82,23 +70,55 @@ footer {
 }
 
 h1 {
-	font-size: 1.75em;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 1.85em;
+	font-weight: bolder;
+	letter-spacing: -.5px;
+}
+
+h2 {
+	font-size: 1.25em;
 	font-weight: bolder;
 }
 
-p {
+h3 {
+	font-family: 'Libre Baskerville', serif;
 	font-size: 1em;
+	font-style: italic;
+}
 
+h4 {
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 7px;
 }
 
 h5 {
 	color: #E0165A;
 }
+
+p {
+	font-size: 1.15em;
+
+}
+
 a {
 	text-decoration: none;
 }
 main img {
-margin: 10px 20px
+	margin: 10px 20px
 }
 
-
+li {
+	font-size: 1.15em;
+	margin-bottom: 9px;
+}
+/*
+#00AD72 green background
+#00BA7A shade green background
+#1C3E47 text
+#0AC4B9 blue
+#E0165A pink
+#7A5B0C brownish
+#006040 dk gr
+*/

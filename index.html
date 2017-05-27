@@ -4,24 +4,20 @@
 	<head>
 		<meta charset="utf-8">    	
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
 		<!--meta name=”description” content=”155 characters of message matching text with a call to action goes here”-->
 		<meta name="description" content="Week 4 Homework, JQuery Game Crystals Collectors NWCoding Bootcamp.">
 		<meta name="author" content="Helen Smith">
 			<!-- Up to 70 Characters of Keyword-relevant text here -->
 			<title>Crystals Collector</title>
 		<!--Faviocon-->
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+		<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon"> 
 		<!--Myers reset-->
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-		<!-- Latest compiled and minified CSS
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-		<!-- Optional theme
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+		<!--When in doubt use Caslon but not available in Google Fonts -->
+		 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> 
 		<!--Local CSS-->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
-		
 	
 	<header>
 		<div class="box">
@@ -29,6 +25,7 @@
 				<h1> Crystals Collector !</h1>
 			</div><!--closes game-->
 			<div class="instructions">
+				<h4> Click here for instructions.</h4>
 				<p>The computer will choose a random number to start the game.</p>
 				<br />
 				<p>There are four crystals, the value of each is hidden until you click on it. By clicking on a crystal you will add points to your score.</p>
@@ -46,71 +43,42 @@
 	<main>
 		<div class="box">
 			<div class="board">
-					<h2> Wins: </h2>	
+				<h2> Wins: <span id="playerWins" ></span></h2>	
 			</div><!--closes board-->
 			<div class="board">
-					<h3> place marker</h3>	
+				<h3> <span id="status"></span></h3>	
 			</div><!--closes board-->
 			<div class="board">
-					<h2> Losses: </h2>	
+				<h2> Losses: <span id="playerLosses" ></span></h2>	
 			</div><!--closes board-->
 
-				<img src="assets/images/crystal1.svg" alt="pink crystal" width="150" height="150">
-				<div class="score">	
-				<h2>The Number to Match 1: 
-					<span id="crystal1" ></span>
-				</h2>
-			</div><!--closes score-->
-				<img src="assets/images/crystal2.svg" alt="blue crystal" width="150" height="150">
-				<div class="score">	
-				<h2>The Number to Match n2: 
-					<span id="crystal2" ></span>
-				</h2>
-			</div><!--closes score-->
-				<img src="assets/images/crystal3.svg" alt="purple crystal" width="150" height="150">
-				<div class="score">	
-				<h2>The Number to Match 3: 
-					<span id="crystal3" ></span>
-				</h2>
-			</div><!--closes score-->
-				<img src="assets/images/crystal4.svg" alt="green crystal" width="150" height="150">
-				<div class="score">	
-				<h2>The Number to Match 4: 
-					<span id="crystal4" ></span>
+			<!--images-->
+				<img src="assets/images/crystal1.svg" id="one" alt="pink crystal" width="150" height="150">
+				<img src="assets/images/crystal2.svg" id="two" alt="blue crystal" width="150" height="150">
+				<img src="assets/images/crystal3.svg" id="three" alt="purple crystal" width="150" height="150">
+				<img src="assets/images/crystal4.svg" id="four" alt="green crystal" width="150" height="150">
+			<div class="clear"></div>
+
+			<div class="score">	
+				<h2>Number to Match: 
+					<span id="randomNumber" ></span>
 				</h2>
 			</div><!--closes score-->
 			<div class="score">	
-				<h2>The Number to Match: 
-					<span id="computerChoice" ></span>
+				<h2>Player Total: 
+					<span id="finalTotal"></span>
 				</h2>
-			</div><!--closes score-->
-			<div class="score">	
-				<h2>yourTotal</h2>
 			</div><!--closes score-->
 		</div><!--closes box-->
 	</main>
 
 	<footer>
 		<a href="https://github.com/intaglioplate312/week-4-game" target="_blank"><img src="assets/images/github_icon.svg" alt="github logo" width="30" height="30"></a>
-
 		<a href="https://justofflakeshoredrive.com" target="_blank"><h5> justofflsd.com </h5></a>
-
 	</footer>
 
-
-
-
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
-
-
-		<!-- jQuery library
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-
-		<!-- Latest compiled Bootstrap JavaScript
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 	</body>
 </html>

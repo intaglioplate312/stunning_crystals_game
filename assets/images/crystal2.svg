@@ -1,1 +1,41 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288"><defs><style>.cls-1{fill:#0995ba;}.cls-2{fill:#b1b3b6;}.cls-10,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9{opacity:0.5;isolation:isolate;}.cls-3{fill:#c7c8ca;}.cls-4{fill:#77787b;}.cls-5{fill:#636466;}.cls-6{fill:#e6e7e8;}.cls-7{fill:#d1d3d4;}.cls-8{fill:#bcbec0;}.cls-9{fill:#808285;}.cls-10{fill:#6d6e71;}</style></defs><title>Artboard 1</title><circle class="cls-1" cx="144" cy="144" r="135"/><path class="cls-2" d="M221,112.1h0l50.9,30.8a127.09,127.09,0,0,0-36.7-88.5L221,112.1Z"/><path class="cls-3" d="M175.9,221h0l-30.8,50.9a127.09,127.09,0,0,0,88.5-36.7L175.9,221Z"/><path class="cls-4" d="M175.9,67h0l57.7-14.2a127.28,127.28,0,0,0-88.5-36.7L175.9,67Z"/><path class="cls-5" d="M221,175.9h0l14.2,57.7a127.28,127.28,0,0,0,36.7-88.5Z"/><path class="cls-3" d="M112.1,67h0l30.8-50.9A127.09,127.09,0,0,0,54.4,52.8L112.1,67Z"/><path class="cls-2" d="M67,175.9h0L16.1,145.1a127.09,127.09,0,0,0,36.7,88.5L67,175.9Z"/><path class="cls-5" d="M67,112.1h0L52.8,54.4a127.28,127.28,0,0,0-36.7,88.5L67,112.1Z"/><path class="cls-4" d="M112.1,221h0L54.4,235.2a127.28,127.28,0,0,0,88.5,36.7L112.1,221Z"/><polygon class="cls-6" points="221 112.1 221 112.1 175.9 67 175.9 67 175.9 67 112.1 67 112.1 67 112.1 67 67 112.1 67 112.1 67 112.1 67 175.9 67 175.9 67 175.9 112.1 221 112.1 221 112.1 221 175.9 221 175.9 221 175.9 221 221 175.9 221 175.9 221 175.9 221 112.1"/><path class="cls-7" d="M112.1,221l30.8,50.9h2.2L175.9,221Z"/><path class="cls-7" d="M175.9,67,145.1,16.1h-2.2L112.1,67Z"/><path class="cls-8" d="M67,112.1,16.1,142.9v2.2L67,175.9Z"/><path class="cls-8" d="M221,175.9l50.9-30.8v-2.2L221,112.1Z"/><path class="cls-9" d="M112.1,67,54.4,52.8l-1.5,1.5L67,112.1Z"/><path class="cls-9" d="M175.9,221l57.7,14.2,1.5-1.5L221,175.9Z"/><path class="cls-10" d="M233.6,52.8,175.9,67,221,112.1l14.2-57.7"/><path class="cls-10" d="M67,175.9,52.8,233.6l1.5,1.5L112,220.9Z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 288 288" style="enable-background:new 0 0 288 288;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#0995BA;}
+	.st1{opacity:0.5;fill:#95989A;enable-background:new    ;}
+	.st2{opacity:0.5;fill:#C7C8CA;enable-background:new    ;}
+	.st3{opacity:0.5;fill:#414345;enable-background:new    ;}
+	.st4{opacity:0.5;fill:#636466;enable-background:new    ;}
+	.st5{opacity:0.5;fill:#B1B3B6;enable-background:new    ;}
+	.st6{opacity:0.5;fill:#797A7C;enable-background:new    ;}
+	.st7{opacity:0.5;fill:#E6E7E8;enable-background:new    ;}
+	.st8{opacity:0.5;fill:#D1D3D4;enable-background:new    ;}
+	.st9{opacity:0.5;fill:#BCBEC0;enable-background:new    ;}
+	.st10{opacity:0.5;fill:#808285;enable-background:new    ;}
+	.st11{opacity:0.5;fill:#6D6E71;enable-background:new    ;}
+</style>
+<title>Artboard 1</title>
+<ellipse transform="matrix(0.8988 -0.4384 0.4384 0.8988 -48.5518 77.6991)" class="st0" cx="144" cy="144" rx="135" ry="135"/>
+<path class="st1" d="M199.2,81.6L199.2,81.6l59.3,5.4c-14.7-29.7-40.5-52.5-71.8-63.5L199.2,81.6z"/>
+<path class="st2" d="M206.4,199.2L206.4,199.2l-5.4,59.3c29.7-14.7,52.5-40.5,63.5-71.8L206.4,199.2z"/>
+<path class="st3" d="M138.9,60.8L138.9,60.8l45.6-38.1c-31.4-10.6-65.7-8.5-95.6,5.8L138.9,60.8z"/>
+<path class="st4" d="M227.2,138.9L227.2,138.9l38.1,45.6c10.6-31.4,8.5-65.7-5.8-95.6L227.2,138.9z"/>
+<path class="st2" d="M81.6,88.8L81.6,88.8l5.4-59.3C57.2,44.3,34.5,70,23.5,101.3L81.6,88.8z"/>
+<path class="st5" d="M88.8,206.4L88.8,206.4l-59.3-5.4c14.7,29.7,40.5,52.5,71.8,63.5L88.8,206.4z"/>
+<path class="st4" d="M60.8,149.1L60.8,149.1l-38.1-45.6c-10.6,31.4-8.5,65.7,5.8,95.6L60.8,149.1z"/>
+<path class="st6" d="M149.1,227.2L149.1,227.2l-45.6,38.1c31.4,10.6,65.7,8.5,95.6-5.8L149.1,227.2z"/>
+<polygon class="st7" points="199.2,81.6 199.2,81.6 138.9,60.8 138.9,60.8 138.9,60.8 81.6,88.8 81.6,88.8 81.6,88.8 60.8,149.1 
+	60.8,149.1 60.8,149.1 88.8,206.4 88.8,206.4 88.8,206.4 149.1,227.2 149.1,227.2 149.1,227.2 206.4,199.2 206.4,199.2 206.4,199.2 
+	227.2,138.9 227.2,138.9 227.2,138.9 "/>
+<path class="st8" d="M149.1,227.2l50,32.2l2-1l5.4-59.3L149.1,227.2z"/>
+<path class="st8" d="M138.9,60.8l-50-32.2l-2,1l-5.4,59.3L138.9,60.8z"/>
+<path class="st9" d="M60.8,149.1l-32.2,50l1,2l59.3,5.4L60.8,149.1z"/>
+<path class="st9" d="M227.2,138.9l32.2-50l-1-2l-59.3-5.4L227.2,138.9z"/>
+<path class="st10" d="M81.6,88.8l-58.1,12.5l-0.7,2l38,45.8L81.6,88.8z"/>
+<path class="st10" d="M206.4,199.2l58.1-12.5l0.7-2l-38-45.8L206.4,199.2z"/>
+<path class="st11" d="M184.6,22.8l-45.6,38.1l60.3,20.8l-12.5-58.1"/>
+<path class="st11" d="M88.8,206.4l12.5,58.1l2,0.7l45.6-38.1L88.8,206.4z"/>
+</svg>

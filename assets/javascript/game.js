@@ -1,64 +1,109 @@
- // Handler for .ready() called ... and so it starts
-$( document ).ready(function(){
+$(function(){
+
+  // Selects a random number between 19 - 120 to be shown at the start of the game.
+  var randomMatch=Math.floor(Math.random()*120) +1;
+  $('#randomNumber').text(randomMatch);
+
+  //loads page with instructions hidden. 
+  //Does anybody really read instructions?
+  var par = $('p');
+  $(par).hide();
+  $("h4").click(function(){
+        $("p").toggle();
+    });
+
+
+  //Selects a random number between 1-12 for each crystal.
+  var randomOne= Math.floor(Math.random()*12) +1;
+  var randomTwo= Math.floor(Math.random()*12) +1;
+  var randomThree= Math.floor(Math.random()*12) +1;
+  var randomFour= Math.floor(Math.random()*12) +1;
  
-//Start of game
-//Computer gerates random number
-var randomNum = Math.floor(Math.random()*120) +1;
-// display number to match
-$('#computerChoice').text(randomNum);
+  //Starts game with blank slate.
+  var playerTotal= 0; 
+  var wins= 0;
+  var losses = 0;
 
-//Each crystal should have a random hidden value between 1 - 12.
-var crystalOne = Math.floor(Math.random()*12) + 1;
-// display number to match
-$('#crystal1').text(crystalOne);
-var crystalTwo = Math.floor(Math.random()*12) + 1;
-// display number to match
-$('#crystal2').text(crystalTwo);
-var crystalThree = Math.floor(Math.random()*12) + 1;
-// display number to match
-$('#crystal3').text(crystalThree);
-var crystalFour = Math.floor(Math.random()*12) + 1;
-// display number to match
-$('#crystal4').text(crystalFour);
-
-//For start no display
-var playerChoices = 0;
-var Wins = 0;
-var Losses = 0;
-
-/*
-
-//The random number shown at the start of the game should be between 19 - 120.
-//The player will be shown a random number at the start of the game.
-push.computerNum
-//When the player clicks on a crystal, it will add a specific amount of points to the player's total score.
- ++ gem
-//Your game will hide this amount until the player clicks a crystal.
-
-//When they do click one, update the player's score counter.
-updateScore
-//The player wins if their total score matches the random number from the beginning of the game.
-(playerChoices == ComputerNum) {
-   return "You Won!";
-}
-//The player loses if their score goes above the random number.
-(playerChoices > ComputerNum) {
-   return "Sorry you lose";
-//The game restarts whenever the player wins or loses.
-
-//When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
-var reset = {}
-var updatedWin = {}
-var updatedLoss = {}
-var updatedComputerNum = {}
+  //Sets up palceholders for scores and bon mots.
+  $('#playerWins').text(wins);
+  $('#playerLosses').text(losses);
+  $('#status').text('Good Luck');
 
 
-//The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
+//Reset
+//When the game begins again, the player should see a new random number.
+//Also, all the crystals will have four new hidden values.
+//The user's score (and score counter) will reset to zero.
+  function reset(){
+      randomMatch=Math.floor(Math.random()*120) +1;
+      $('#randomNumber').text(randomMatch);
+      randomOne= Math.floor(Math.random()*12) +1;
+      randomTwo= Math.floor(Math.random()*12) +1;
+      randomThree= Math.floor(Math.random()*12) +1;
+      randomFour= Math.floor(Math.random()*12) +1;
+      playerTotal= 0;
+      $('#finalTotal').text(playerTotal);
+  } 
 
+//Adds the wins to the player's scores and calls reset
+  function jollyGood(){
+      $('#status').text('Jolly Good, Try Again.');
+      wins++; 
+      $('#playerWins').text(wins);
+      reset();
+  }
+//Adds the losses to the player's scores and calls reset
+  function goodTry(){
+      $('#status').text('Bad Luck, Try Again.');;
+      losses++;
+      $('#playerLosses').text(losses);
+      reset()
+  }
 
+//Basic Game set-up click for crystals
+  $('#one').on ('click', function(){
+      playerTotal = playerTotal + randomOne;
+      $('#finalTotal').text(playerTotal); 
+          //sets win/lose conditions
+      if (playerTotal == randomMatch){
+        jollyGood();
+      }
+      else if ( playerTotal > randomMatch){
+        goodTry();
+      }   
+  })  
+  
+  $('#two').on ('click', function(){
+        playerTotal = playerTotal + randomTwo;
+        $('#finalTotal').text(playerTotal); 
+        if (playerTotal == randomMatch){
+          jollyGood();
+        }
+        else if ( playerTotal > randomMatch){
+          goodTry();
+        } 
+  })  
+  
+  $('#three').on ('click', function(){
+        playerTotal = playerTotal + randomThree;
+        $('#finalTotal').text(playerTotal);
+        if (playerTotal == randomMatch){
+          jollyGood();
+        }
+        else if ( playerTotal > randomMatch){
+          goodTry();
+        } 
+  })  
+  
+  $('#four').on ('click', function(){
+        playerTotal = playerTotal + randomFour;
+        $('#finalTotal').text(playerTotal); 
+        if (playerTotal == randomMatch){
+          jollyGood();
+        }
+        else if ( playerTotal > randomMatch){
+          goodTry();
+        }
+  }) 
+}); 
 
-
-*/
-
-
-}); //closes document_ready_function
