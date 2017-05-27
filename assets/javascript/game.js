@@ -14,20 +14,19 @@ $(function(){
 
 
   //Selects a random number between 1-12 for each crystal.
-  var randomOne= Math.floor(Math.random()*12) +1;
-  var randomTwo= Math.floor(Math.random()*12) +1;
-  var randomThree= Math.floor(Math.random()*12) +1;
-  var randomFour= Math.floor(Math.random()*12) +1;
+  var randomOne = Math.floor(Math.random()*12) +1;
+  var randomTwo = Math.floor(Math.random()*12) +1;
+  var randomThree = Math.floor(Math.random()*12) +1;
+  var randomFour = Math.floor(Math.random()*12) +1;
  
   //Starts game with blank slate.
-  var playerTotal= 0; 
-  var wins= 0;
+  var playerTotal = 0; 
+  var wins = 0;
   var losses = 0;
 
-  //Sets up palceholders for scores and bon mots.
+  //Sets up placeholders for scores and bon mots.
   $('#playerWins').text(wins);
   $('#playerLosses').text(losses);
-  $('#status').text('Good Luck');
 
 
 //Reset
@@ -47,14 +46,14 @@ $(function(){
 
 //Adds the wins to the player's scores and calls reset
   function jollyGood(){
-      $('#status').text('Jolly Good, Try Again.');
+      $('#status').text('Jolly Good');
       wins++; 
       $('#playerWins').text(wins);
       reset();
   }
 //Adds the losses to the player's scores and calls reset
   function goodTry(){
-      $('#status').text('Bad Luck, Try Again.');;
+      $('#status').text('Bad Luck');;
       losses++;
       $('#playerLosses').text(losses);
       reset()
@@ -65,10 +64,10 @@ $(function(){
       playerTotal = playerTotal + randomOne;
       $('#finalTotal').text(playerTotal); 
           //sets win/lose conditions
-      if (playerTotal == randomMatch){
+      if (playerTotal === randomMatch){
         jollyGood();
       }
-      else if ( playerTotal > randomMatch){
+      else if (playerTotal > randomMatch){
         goodTry();
       }   
   })  
@@ -76,10 +75,10 @@ $(function(){
   $('#two').on ('click', function(){
         playerTotal = playerTotal + randomTwo;
         $('#finalTotal').text(playerTotal); 
-        if (playerTotal == randomMatch){
+        if (playerTotal === randomMatch){
           jollyGood();
         }
-        else if ( playerTotal > randomMatch){
+        else if (playerTotal > randomMatch){
           goodTry();
         } 
   })  
@@ -87,10 +86,10 @@ $(function(){
   $('#three').on ('click', function(){
         playerTotal = playerTotal + randomThree;
         $('#finalTotal').text(playerTotal);
-        if (playerTotal == randomMatch){
+        if (playerTotal === randomMatch){
           jollyGood();
         }
-        else if ( playerTotal > randomMatch){
+        else if (playerTotal > randomMatch){
           goodTry();
         } 
   })  
@@ -98,10 +97,10 @@ $(function(){
   $('#four').on ('click', function(){
         playerTotal = playerTotal + randomFour;
         $('#finalTotal').text(playerTotal); 
-        if (playerTotal == randomMatch){
+        if (playerTotal === randomMatch){
           jollyGood();
         }
-        else if ( playerTotal > randomMatch){
+        else if (playerTotal > randomMatch){
           goodTry();
         }
   }) 
