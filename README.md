@@ -1,6 +1,6 @@
 
-## Crystal Collector, 
-is a fun and jQuery game.
+## Crystal Collector
+A fun jQuery game.
 
   * The player will be shown a random number between 19 - 120, at the start of the game.
   * There are four crystals displayed as buttons on the page. When the player clicks on a crystal, it will add a specific amount  of points between 1 - 12, to the player's total score.
