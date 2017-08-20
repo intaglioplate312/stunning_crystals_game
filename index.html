@@ -1,84 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">    	
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--meta name=”description” content=”155 characters of message matching text with a call to action goes here”-->
-		<meta name="description" content="Week 4 Homework, JQuery Game Crystals Collectors NWCoding Bootcamp.">
-		<meta name="author" content="Helen Smith">
-			<!-- Up to 70 Characters of Keyword-relevant text here -->
-			<title>Crystals Collector</title>
-		<!--Faviocon-->
-		<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon"> 
-		<!--Myers reset-->
-		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-		<!--When in doubt use Caslon but not available in Google Fonts -->
-		 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> 
-		<!--Local CSS-->
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	</head>
-	
-	<header>
-		<div class="box">
-			<div class="game">
-				<h1> Crystals Collector !</h1>
-			</div><!--closes game-->
-			<div class="instructions">
-				<h4> Click here for instructions.</h4>
-				<p>The computer will choose a random number to start the game.</p>
-				<br />
-				<p>There are four crystals, the value of each is hidden until you click on it. By clicking on a crystal you will add points to your score.</p>
-				<br />
-				<p> You win the game by matching your total score to the computer.</p>
-				<br />
-				<p> You lose the game if your total score goes above the computer.</p>
-				<br />
-				<p> Each time when the game start, the game will change the values of each crystal.</p>
-			</div><!--closes instructions-->
-		</div><!--closes box-->
-	</header>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--meta name=”description” content=”155 characters of message matching text with a call to action goes here”-->
+    <meta name="description" content="JQuery Crystal Game">
+    <meta name="author" content="Helen Smith">
+    <meta property="og:title" content="Crystal Collectors">
+    <meta property="og:image" content="assets/images/screen_shot.png">
+    <meta property="og:description" content="A jQuery Crystal Game">
+    <meta property="og:url" content="https://justofflakeshoredrive.com/crystal-collector/index.html">
 
-	<main>
-		<div class="box">
-			<div class="board">
-				<h2> Wins: <span id="playerWins" ></span></h2>	
-			</div><!--closes board-->
-			<div class="board">
-				<h3 id="status">Best of Luck</h3>	
-			</div><!--closes board-->
-			<div class="board">
-				<h2> Losses: <span id="playerLosses" ></span></h2>	
-			</div><!--closes board-->
+    <!-- Up to 70 Characters of Keyword-relevant text here -->
+    <title>Crystals Collector</title>
+    <!--Faviocon-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!--Myers reset-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!--When in doubt use Caslon but not available in Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <!--Local CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<header>
+    <div class="box">
+        <div class="game">
+            <h1> Crystals Collector !</h1>
+        </div>
+        <!--closes game-->
+        <div class="instructions">
+            <h4> Click here for instructions.</h4>
+            <p>The computer will choose a random number to start the game.</p>
+            <br />
+            <p>There are four crystals, the value of each is hidden until you click on it. By clicking on a crystal you will add points to your score.</p>
+            <br />
+            <p> You win the game by matching your total score to the computer.</p>
+            <br />
+            <p> You lose the game if your total score goes above the computer.</p>
+            <br />
+            <p> Each time when the game start, the game will change the values of each crystal.</p>
+        </div>
+        <!--closes instructions-->
+    </div>
+    <!--closes box-->
+</header>
+<main>
+    <div class="box">
+        <div class="board">
+            <h2> Wins: <span id="playerWins"></span></h2>
+        </div>
+        <!--closes board-->
+        <div class="board">
+            <h3 id="status">Best of Luck</h3>
+        </div>
+        <!--closes board-->
+        <div class="board">
+            <h2> Losses: <span id="playerLosses"></span></h2>
+        </div>
+        <!--closes board-->
+        <!--images-->
+        <img src="assets/images/crystal1.svg" id="one" alt="pink crystal">
+        <img src="assets/images/crystal2.svg" id="two" alt="blue crystal">
+        <img src="assets/images/crystal3.svg" id="three" alt="purple crystal">
+        <img src="assets/images/crystal4.svg" id="four" alt="green crystal">
+        <div class="clear"></div>
+        <div class="score">
+            <h2>Number to Match:
+                <span id="randomNumber"></span>
+            </h2>
+        </div>
+        <!--closes score-->
+        <div class="score">
+            <h2>Player Total:
+                <span id="finalTotal"></span>
+            </h2>
+        </div>
+        <!--closes score-->
+    </div>
+    <!--closes box-->
+</main>
+<footer>
+    <a href="https://github.com/intaglioplate312/week-4-game" target="_blank"><img src="assets/images/github_icon.svg" alt="github logo" width="30" height="30"></a>
+    <a href="https://justofflakeshoredrive.com" target="_blank">
+        <h5> justofflsd.com </h5>
+    </a>
+</footer>
+<!--jQuery Link-->
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
 
-			<!--images-->
-				<img src="assets/images/crystal1.svg" id="one" alt="pink crystal">
-				<img src="assets/images/crystal2.svg" id="two" alt="blue crystal">
-				<img src="assets/images/crystal3.svg" id="three" alt="purple crystal">
-				<img src="assets/images/crystal4.svg" id="four" alt="green crystal">
-			<div class="clear"></div>
-
-			<div class="score">	
-				<h2>Number to Match: 
-					<span id="randomNumber" ></span>
-				</h2>
-			</div><!--closes score-->
-			<div class="score">	
-				<h2>Player Total: 
-					<span id="finalTotal"></span>
-				</h2>
-			</div><!--closes score-->
-		</div><!--closes box-->
-	</main>
-
-	<footer>
-		<a href="https://github.com/intaglioplate312/week-4-game" target="_blank"><img src="assets/images/github_icon.svg" alt="github logo" width="30" height="30"></a>
-		<a href="https://justofflakeshoredrive.com" target="_blank"><h5> justofflsd.com </h5></a>
-	</footer>
-		<!--jQuery Link-->
-		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="  crossorigin="anonymous"></script>
-		<script type="text/javascript" src="assets/javascript/game.js"></script>
-
-	</body>
 </html>
-
